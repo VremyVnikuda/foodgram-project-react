@@ -5,8 +5,8 @@ from .models import Subscription, User
 
 
 class CustomUserAdmin(UserAdmin):
-    """Настройки модели Пользователя
-    lля отображения в панели администратора"""
+    """Настройки модели пользователя
+    для отображения в панели администратора"""
 
     list_display = (
         'email',
@@ -21,8 +21,8 @@ class CustomUserAdmin(UserAdmin):
 
 
 class SubscriptionAdmin(admin.ModelAdmin):
-    """Настройки модели Подписки
-    lля отображения в панели администратора"""
+    """Настройки модели подписки
+    для отображения в панели администратора"""
 
     list_display = (
         'user',
